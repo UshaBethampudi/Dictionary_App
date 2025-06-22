@@ -1,0 +1,160 @@
+/* Import a beautiful, clean font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Animated background gradient */
+  background: linear-gradient(-45deg, #ffe8d1, #ffe3f1, #d1ffe3, #d1f0ff);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Header Styles */
+.app h1 {
+  text-align: center;
+  background-color: #000000; /* or your chosen color */
+  color: #fff;
+  padding: 30px 15px;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+
+  /* New Shadow for the Header */
+  box-shadow: 0px 4px 12px rgba(33, 150, 243, 0.25);
+}
+
+
+.container {
+  max-width: 600px;
+  width: 90%; /* Responsive layout */
+  min-height: 100px;
+  margin: 30px auto;
+  background-color: #ffffffcc;
+  box-shadow: 0px 4px 10px rgba(100, 100, 100, 0.25);
+  padding: 22px;
+  border-radius: 12px;
+}
+
+.container .datas {
+  margin-left: 22px;
+}
+
+/* Search Bar Styles */
+.searchBar {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.searchBar input {
+  flex: 1;
+  min-width: 250px;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f5;
+}
+
+.searchBar button {
+  padding: 14px 20px;
+  background-color: #2979FF; /* New Bright Blue */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.searchBar button:hover {
+  background-color: #1565C0;
+}
+
+/* Results Styles */
+.datas button {
+  padding: 10px;
+  background-color: #3F51B5; /* New Indigo */
+  color: #fff;
+  font-size: 18px;
+  margin-top: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.datas p {
+  font-size: 18px;
+}
+
+.app h1 i {
+  font-size: 33px;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .searchBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchBar input {
+    width: 100%;
+  }
+
+  .searchBar button {
+    width: 100%;
+  }
+
+  .container {
+    padding: 18px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app h1 {
+    font-size: 1.5rem;
+    padding: 20px 10px;
+  }
+
+  .datas p {
+    font-size: 16px;
+  }
+
+  .searchBar input,
+  .searchBar button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Background animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
